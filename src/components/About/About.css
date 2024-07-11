@@ -81,12 +81,20 @@
     width: 130px;
 }
 
-.about-content .sr-left img{
+.about-content .sr-left img {
     border-radius: 50%;
 }
 
 
 @media (max-width: 1024px) {
+    .about-top-bg-container {
+        padding: 200px 0 100px 0;
+    }
+
+    .about-top-bg-container h1 {
+        font-size: 28px;
+    }
+
     .about-container {
         padding: 50px;
         flex-direction: column-reverse;
@@ -102,7 +110,7 @@
         width: 100%;
     }
 
-    .about-img {       
+    .about-img {
         height: auto;
         padding: 0;
     }
@@ -131,7 +139,21 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .about-top-bg-container {
+        padding: 170px 0 50px 0;
+    }
+
+    .about-top-bg-container h1 {
+        font-size: 22px;
+    }
+}
+
 @media (max-width: 480px) {
+    .about-top-bg-container h1 {
+        font-size: 18px;
+    }
+
     .about-container {
         padding: 40px;
     }
@@ -210,7 +232,7 @@
 
 .right-content-flex {
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
 .skill-img-flex {
@@ -249,28 +271,28 @@
         padding: 120px 50px;
         width: 80%;
     }
-    
+
     .left-content h1 {
         font-size: 32px;
     }
-    
+
     .left-content button {
         padding: 8px 20px;
         margin-top: 10px;
     }
-    
+
     .right-content {
         margin: 100px 0;
         margin-left: -100px;
     }
-    
+
     .skill-img-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 8px;
     }
-    
+
     .skill-img img {
         margin: 0;
     }
@@ -279,12 +301,12 @@
         text-align: center;
         width: 100%;
     }
-    
+
     .skill-content h2 {
         font-weight: bold;
         font-size: 18px;
     }
-    
+
     .skill-content span {
         font-size: 16px;
         color: #727171;
@@ -292,7 +314,7 @@
     }
 }
 
-@media (max-width: 768px) {   
+@media (max-width: 768px) {
     .management-container {
         flex-direction: column;
     }
@@ -300,7 +322,7 @@
     .right-container {
         background-color: #26c976;
     }
-    
+
     .left-content {
         padding: 50px 100px 20px 100px;
         width: 100%;
@@ -309,11 +331,11 @@
     .left-content h1 {
         font-size: 28px;
     }
-    
+
     .right-content {
         margin: 0;
     }
-    
+
     .skill-img-flex {
         margin: 20px 10px;
     }
@@ -335,11 +357,11 @@
     .skill-content h2 {
         font-size: 16px;
     }
-    
+
     .skill-content span {
         font-size: 14px;
     }
-    
+
     .skill-img-flex {
         margin: 10px;
     }
