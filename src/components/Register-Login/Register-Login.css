@@ -1,0 +1,403 @@
+.main-container {
+    background-color: #f8f0e9;
+    padding: 50px;
+}
+
+.register-container,
+.login-container,
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 80px 0;
+    height: auto;
+    width: 100%;
+}
+
+.form-container {
+    width: 500px;
+    height: auto;
+    padding: 50px 70px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.heading{
+    margin: 5px;
+}
+
+.heading h2 {
+    margin: 10px 0;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: center;
+}
+
+.input-box {
+    height: auto;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.input-box input {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(177, 174, 174, 0.2);
+    color: #7e7d7d;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.remember-forgot {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #7e7d7d;
+}
+
+.error-message {
+    font-size: 12px;
+}
+
+.btn-box {
+    height: 50px;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-box:hover {
+    padding-top: 25px;
+    transition: 0.2s;
+}
+
+.logout-button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f16126;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-submit {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f16126;
+    color: #fff;
+    cursor: pointer;
+}
+
+.or-container {
+    display: flex;
+    justify-content: center;
+}
+
+.or {
+    padding: 30px;
+
+}
+
+.or-text {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f16126;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+
+}
+
+.or-text {
+    font-size: 14px;
+}
+
+.link-btn {
+    text-align: center;
+    font-size: 14px;
+}
+
+.link-btn a {
+    color: #7e7d7d;
+    text-decoration: none;
+}
+
+.link-btn a:hover {
+    text-decoration: underline;
+}
+
+.heading h3 {
+    margin: 10px 0;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icons-div:hover {
+    margin-top: -5px;
+    transition: 0.2s;
+}
+
+.icon-facebook {
+    padding: 0 5px;
+    font-size: 34px;
+    color: #0a1970d5;
+}
+
+.icon-linkedin {
+    padding: 0 5px;
+    font-size: 34px;
+    color: #1129b3d5;
+}
+
+.icon-instagram {
+    padding: 0 5px;
+    font-size: 34px;
+    color: #df248bd5;
+}
+
+
+.icon-youtube {
+    padding: 0 5px;
+    font-size: 34px;
+    color: #e01f1fd5;
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 40px 30px;
+    }
+
+    .form-container {
+        width: 70%;
+        max-width: 500px;
+        padding: 30px 50px;
+    }
+
+    .heading h2 {
+        font-size: 26px;
+    }
+
+    .heading h3 {
+        font-size: 16px;
+    }
+
+    .input-box {
+        padding: 8px 0;
+    }
+
+    .input-box input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-box {
+        padding: 25px 0;
+        margin-bottom: 20px;
+    }
+    
+    .btn-box:hover {
+        padding-top: 20px;
+        transition: 0.2s;
+    }
+
+    .remember-forgot,
+    .link-btn
+    {
+        font-size: 12px;
+    }
+
+    .checkbox-remember {
+       height: 12px;
+       width: 12px;
+    }
+
+    .error-message {
+        font-size: 11px;
+    }
+
+    .form-submit,
+    .logout-button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .or {
+        padding: 25px;
+    }
+
+    .or-text {
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .icon-facebook,
+    .icon-linkedin,
+    .icon-instagram,
+    .icon-youtube {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        padding: 30px 20px;
+    }
+
+    .form-container {
+        padding: 20px 40px;
+    }
+
+    .heading h2 {
+        font-size: 22px;
+    }
+
+    .heading h3 {
+        font-size: 14px;
+    }
+
+    .input-box {
+        padding: 6px 0;
+    }
+
+    .input-box input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .btn-box {
+        padding: 20px 0;
+        margin-bottom: 10px;
+    }
+    
+    .btn-box:hover {
+        padding-top: 15px;
+        transition: 0.2s;
+    }
+
+    .remember-forgot,
+    .link-btn {
+        font-size: 11px;
+    }
+
+    .checkbox-remember {
+        height: 10px;
+        width: 10px;
+     }
+
+    .error-message {
+        font-size: 10px;
+    }
+
+    .form-submit,
+    .logout-button {
+        padding: 6px 18px;
+        font-size: 14px;
+    }
+
+    .or {
+        padding: 15px;
+    }
+
+    .or-text {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .icon-facebook,
+    .icon-linkedin,
+    .icon-instagram,
+    .icon-youtube {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px 10px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .heading h3 {
+        font-size: 12px;
+    }
+
+    .input-box {
+        padding: 4px 0;
+    }
+
+    .input-box input {
+        padding: 3px;
+        font-size: 11px;
+    }
+
+    .btn-box {
+        padding: 15px 0;
+        margin-bottom: 0px;
+    }
+    
+    .btn-box:hover {
+        padding-top: 10px;
+        transition: 0.2s;
+    }
+
+    .remember-forgot,
+    .link-btn {
+        font-size: 10px;
+    }
+
+    .checkbox-remember {
+        height: 9px;
+        width: 9px;
+     }
+
+    .error-message {
+        font-size: 8px;
+    }
+
+    .form-submit {
+        padding: 4px 15px;
+        font-size: 12px;
+    }
+
+    .or {
+        padding: 10px;
+    }
+
+    .or-text {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,339 @@
+.about-top-bg-container {
+    background-image: url('../../assets/images/top-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 250px 0 150px 0;
+}
+
+.about-top-bg-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-top-container {
+    display: inline-block;
+}
+
+.top-about-link {
+    color: #727171;
+}
+
+.about-container {
+    padding: 100px 50px;
+    display: flex;
+}
+
+.about-container-about {
+    padding: 100px 50px;
+    display: flex;
+    background-color: #fff9ef;
+}
+
+.about-header {
+    width: 50%;
+}
+
+.about-img {
+    width: 100%;
+    padding: 50px;
+}
+
+.about-img-container {
+    padding: 0 50px;
+}
+
+.about-header h3 {
+    color: #f16126;
+    font-weight: bold;
+}
+
+.about-header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-header p {
+    color: #727171;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.about-content h4 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about-content .sr-left {
+    padding: 10px;
+    height: 100px;
+    width: 130px;
+}
+
+.about-content .sr-left img{
+    border-radius: 50%;
+}
+
+
+@media (max-width: 1024px) {
+    .about-container {
+        padding: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .about-container-about {
+        padding: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-header {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .about-header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    .about-header p {
+        font-size: 16px;
+    }
+
+    .about-content h4 {
+        font-size: 18px;
+    }
+
+    .about-content .sr-left {
+        height: 100px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 40px;
+    }
+
+    .about-header h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .about-header p {
+        font-size: 14px;
+    }
+
+    .about-content h4 {
+        font-size: 16px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-content .sr-left {
+        height: 70px;
+        width: 110px;
+    }
+
+}
+
+
+/* project management section start */
+.management-container {
+    margin: 0;
+    display: flex;
+    background-color: #fff9ef;
+}
+
+.left-container {
+    background-color: #26c976;
+    width: 85%;
+}
+
+.right-container {
+    background-color: #101115;
+    width: 100%;
+}
+
+.left-content {
+    padding: 100px;
+    width: 100%;
+}
+
+.left-content h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.left-content button {
+    color: #26c976;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    margin-top: 20px;
+}
+
+.right-content {
+    margin: 100px 0;
+    margin-left: -150px;
+}
+
+.right-content-flex {
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.skill-img-flex {
+    background-color: #fff;
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.skill-img img {
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+}
+
+.skill-content h2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.skill-content span {
+    font-size: 18px;
+    color: #727171;
+    padding: 5px;
+}
+
+
+@media (max-width: 1024px) {
+    .left-container {
+        width: 100%;
+    }
+
+    .left-content {
+        padding: 120px 50px;
+        width: 80%;
+    }
+    
+    .left-content h1 {
+        font-size: 32px;
+    }
+    
+    .left-content button {
+        padding: 8px 20px;
+        margin-top: 10px;
+    }
+    
+    .right-content {
+        margin: 100px 0;
+        margin-left: -100px;
+    }
+    
+    .skill-img-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+    
+    .skill-img img {
+        margin: 0;
+    }
+
+    .skill-content {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .skill-content h2 {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .skill-content span {
+        font-size: 16px;
+        color: #727171;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {   
+    .management-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        background-color: #26c976;
+    }
+    
+    .left-content {
+        padding: 50px 100px 20px 100px;
+        width: 100%;
+    }
+
+    .left-content h1 {
+        font-size: 28px;
+    }
+    
+    .right-content {
+        margin: 0;
+    }
+    
+    .skill-img-flex {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content {
+        padding: 20px;
+    }
+
+    .left-content h1 {
+        font-size: 24px;
+    }
+
+    .right-content-flex {
+        flex-direction: column;
+    }
+
+    .skill-content h2 {
+        font-size: 16px;
+    }
+    
+    .skill-content span {
+        font-size: 14px;
+    }
+    
+    .skill-img-flex {
+        margin: 10px;
+    }
+}
+
+/* project management section end */
