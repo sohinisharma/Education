@@ -40,6 +40,7 @@
 .about-img {
     width: 100%;
     padding: 50px;
+    height: auto;
 }
 
 .about-img-container {
@@ -97,9 +98,13 @@
         align-items: center;
     }
 
-    .about-img {
+    .about-img-container {
         width: 100%;
+    }
+
+    .about-img {       
         height: auto;
+        padding: 0;
     }
 
     .about-header {
@@ -152,6 +157,10 @@
     .about-content .sr-left {
         height: 70px;
         width: 110px;
+    }
+
+    .about-img-container {
+        width: 450px;
     }
 
 }

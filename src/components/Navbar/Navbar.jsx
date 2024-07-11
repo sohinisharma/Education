@@ -9,7 +9,8 @@ import { faFacebook, faGoogle, faInstagram, faTwitter, faYoutube } from '@fortaw
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [headerVisible, setHeaderVisible] = useState(true);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [pagesDropdownOpen, setPagesDropdownOpen] = useState(false);
+    const [userDropdownOpen, setUserDropdownOpen] = useState(false);
     const navbarRef = useRef(null);
 
 
@@ -18,7 +19,8 @@ const Navbar = () => {
             if (navbarRef.current && !navbarRef.current.contains(event.target)) {
                 // Click outside the navbar
                 setIsOpen(false);
-                setDropdownOpen(false);
+                setPagesDropdownOpen(false);
+                setUserDropdownOpen(false);
             }
         };
 
@@ -45,12 +47,22 @@ const Navbar = () => {
         }
     };
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!dropdownOpen);
+    const togglePagesDropdown = () => {
+        setPagesDropdownOpen(!pagesDropdownOpen);
+        setUserDropdownOpen(false); // Close user dropdown if pages dropdown opens
     };
 
-    const closeDropdown = () => {
-        setDropdownOpen(false);
+    const closePagesDropdown = () => {
+        setPagesDropdownOpen(false);
+    };
+
+    const toggleUserDropdown = () => {
+        setUserDropdownOpen(!userDropdownOpen);
+        setPagesDropdownOpen(false); // Close pages dropdown if user dropdown opens
+    };
+
+    const closeUserDropdown = () => {
+        setUserDropdownOpen(false);
     };
 
 
@@ -92,10 +104,10 @@ const Navbar = () => {
                             <li><Link className='nav-link' to="/blog" onClick={closeMenu}>Blog</Link></li>
                         </div>
                         <div className='li-div'>
-                        <li className={dropdownOpen ? 'active' : ''} onMouseEnter={toggleDropdown} onMouseLeave={closeDropdown}>
+                        <li className={pagesDropdownOpen ? 'active' : ''} onMouseEnter={togglePagesDropdown} onMouseLeave={closePagesDropdown}>
                             <div className='nav-link'>Pages</div>
-                            {dropdownOpen && (
-                                <div className='pages-dropdown' onClick={closeDropdown}>
+                            {pagesDropdownOpen && (
+                                <div className='pages-dropdown' onClick={closePagesDropdown}>
                                     <Link to="/about" className='pages-dropdown-link' onClick={closeMenu}>About</Link>
                                     <Link to="/creators" className='pages-dropdown-link' onClick={closeMenu}>Team</Link>
                                     <Link to="/instructor" className='pages-dropdown-link' onClick={closeMenu}>Instructor</Link>
@@ -119,18 +131,18 @@ const Navbar = () => {
 
                     {/* Login and Signup icons for mobile */}
                     <div className='log-sign-mv'>
-                        <div onClick={toggleDropdown}>
+                        <div onClick={toggleUserDropdown}>
                             <FontAwesomeIcon icon={faUser} className='log-sign-icon' />
                         </div>
-                        {dropdownOpen && (
+                        {userDropdownOpen && (
                             <div className='dropdown'>
                                 <div>
-                                    <Link to="/login" className='log-icon' onClick={closeDropdown}>
+                                    <Link to="/login" className='log-icon' onClick={closeUserDropdown}>
                                         <FontAwesomeIcon icon={faUser} className='ls-icon' /> Login
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link to="/register" className='sign-icon' onClick={closeDropdown}>
+                                    <Link to="/register" className='sign-icon' onClick={closeUserDropdown}>
                                         <FontAwesomeIcon icon={faUserPlus} className='ls-icon' /> Signup
                                     </Link>
                                 </div>
