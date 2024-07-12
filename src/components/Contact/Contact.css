@@ -74,7 +74,7 @@
 }
 
 .contact-div tr,td{
-    padding: 4px;    
+    padding: 3px 5px;    
 }
 
 .contact-div h2{
@@ -311,10 +311,6 @@
         border: 6px solid #fff; 
         margin: 20px 0;
     }
-    
-    .contact-div{
-        padding: 5px;
-    } 
 
     .contact-div h2{
         font-size: 14px;
@@ -325,11 +321,11 @@
     }
 
     .contact-div .row-td{
-        width: 25px;
+        width: 30px;
     }
     
     .contact-div tr,td{
-        padding: 2px;    
+        padding: 0 5px;    
     }
 
     .contactus-container {

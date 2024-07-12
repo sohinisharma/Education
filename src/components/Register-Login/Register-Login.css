@@ -18,12 +18,13 @@
 .form-container {
     width: 500px;
     height: auto;
+    margin-top: 40px;
     padding: 50px 70px;
     border-radius: 5px;
     background-color: #fff;
 }
 
-.heading{
+.heading {
     margin: 5px;
 }
 
@@ -194,6 +195,7 @@
         width: 70%;
         max-width: 500px;
         padding: 30px 50px;
+        margin-top: 80px;
     }
 
     .heading h2 {
@@ -217,21 +219,20 @@
         padding: 25px 0;
         margin-bottom: 20px;
     }
-    
+
     .btn-box:hover {
         padding-top: 20px;
         transition: 0.2s;
     }
 
     .remember-forgot,
-    .link-btn
-    {
+    .link-btn {
         font-size: 12px;
     }
 
     .checkbox-remember {
-       height: 12px;
-       width: 12px;
+        height: 12px;
+        width: 12px;
     }
 
     .error-message {
@@ -292,7 +293,7 @@
         padding: 20px 0;
         margin-bottom: 10px;
     }
-    
+
     .btn-box:hover {
         padding-top: 15px;
         transition: 0.2s;
@@ -306,7 +307,7 @@
     .checkbox-remember {
         height: 10px;
         width: 10px;
-     }
+    }
 
     .error-message {
         font-size: 10px;
@@ -343,6 +344,7 @@
 
     .form-container {
         padding: 20px;
+        margin-top: 90px;
     }
 
     .heading h2 {
@@ -366,7 +368,7 @@
         padding: 15px 0;
         margin-bottom: 0px;
     }
-    
+
     .btn-box:hover {
         padding-top: 10px;
         transition: 0.2s;
@@ -380,7 +382,7 @@
     .checkbox-remember {
         height: 9px;
         width: 9px;
-     }
+    }
 
     .error-message {
         font-size: 8px;

@@ -3,8 +3,8 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo/01.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faInfoCircle, faTimes, faUser, faUsers, faPhone, faMapMarkerAlt, faUserPlus } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faGoogle, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faInfoCircle, faTimes, faUser, faUsers, faPhone, faMapMarkerAlt, faUserPlus, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -77,11 +77,11 @@ const Navbar = () => {
 
                     <div className='second-nav'>
                         <div className='icon-div1'> Find us on: </div>
-                        <div className='icon-div'><FontAwesomeIcon icon={faGoogle} className='icon' /></div>
-                        <div className='icon-div'><FontAwesomeIcon icon={faFacebook} className='icon' /></div>
-                        <div className='icon-div'><FontAwesomeIcon icon={faTwitter} className='icon' /></div>
-                        <div className='icon-div'><FontAwesomeIcon icon={faYoutube} className='icon' /></div>
-                        <div className='icon-div'><FontAwesomeIcon icon={faInstagram} className='icon' /></div>
+                        <div className='icon-div'><a href='https://ifda.in/'><FontAwesomeIcon icon={faGlobe} className='icon' /></a></div>
+                        <div className='icon-div'><a href='https://www.facebook.com/IFDAINSTITUTE/'><FontAwesomeIcon icon={faFacebook} className='icon' /></a></div>
+                        <div className='icon-div'><a href='https://www.linkedin.com/company/ifda-institute-delhi/?originalSubdomain=in'><FontAwesomeIcon icon={faLinkedin} className='icon' /></a></div>
+                        <div className='icon-div'><a href='https://www.youtube.com/c/IFDAInstitute'><FontAwesomeIcon icon={faYoutube} className='icon' /></a></div>
+                        <div className='icon-div'><a href='https://www.instagram.com/ifda_institute/?hl=en'><FontAwesomeIcon icon={faInstagram} className='icon' /></a></div>
                     </div>
                 </div>
             )}
